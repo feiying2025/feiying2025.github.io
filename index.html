@@ -2,19 +2,15 @@
 <html lang="zh-CN">
 
 <!--Coded date 2025.08.05-->
-<!--HTML Version release 2.6-->
+<!--HTML Version release 2.7.Global-Version-->
 <!--Shandong Ningyang FeiYing (Flying Eagle) RESCUE TEAM-->
 <!--山东 宁阳 飞鹰义警 救援 队-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>宁阳飞鹰义警</title>
-    <!--Release 2.6-->
-
     <link rel="icon" href="https://free.picui.cn/free/2025/07/19/687b832f108ff.png" type="image/png">
-
     <!-- 使用 font awesome 6.4.2 -->
     <!-- bootCDN Font-awesome -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
@@ -28,8 +24,9 @@
             display: none;
         }
         
-        /* 当屏幕宽度小于768px时（通常认为是手机） */
-        @media only screen and (max-width: 768px) {
+        /* 当屏幕宽度小于 768px 时 通常认为是手机 */
+        /* 使用 1220px 防止排版错误 */
+        @media only screen and (max-width: 1220px) {
             .desktop-view {
                 display: none;
             }
@@ -881,6 +878,21 @@
             transform: perspective(1000px) rotateY(0deg);
             transition: all 0.25s ease;
         }
+
+        .mobile-view .team-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://free.picui.cn/free/2025/07/27/6885fb982b07a.jpg') center/cover no-repeat;
+            z-index: 2;
+            transition: all 0.25s ease;
+        }
+
+        .mobile-view .image-container:hover .team-image {
+            transform: scale(1.05);
+        }
         
         /* 服务部分 - 共用 */
         .services {
@@ -1239,7 +1251,7 @@
         }
         
         /* 微信联系方式 */
-        
+
         /* 微信公众号 - 共用 */
         .wechat-container {
             display: flex;
@@ -1570,7 +1582,7 @@
             0%, 100% { color: var(--accent); }
             50% { color: var(--gold); }
         }
-    </style>
+    </style>    
 </head>
 
 <body>
@@ -1599,10 +1611,14 @@
                     <h1>宁阳 <span> 飞鹰义警 </span> 救援队</h1>
                     <h2> 24/7 紧急电话： 0538-6817110</h2>
                     <h3>  &nbsp; </h3>
-                    <p>黑暗中，我们是这里的守护者；危险中，我们是生命的希望。宁阳飞鹰义警救援队时刻准备着，为保障安全而战！</p>
-                    <div class="hero-buttons">
+                    <p>黑暗中，我们是这里的守护者<br>危险中，我们是生命的希望<br>宁阳飞鹰义警救援队时刻准备着<br>为保障安全而战！</p>
+                    <div class="hero-buttons">&#8202;
+                        <a href="#contact" class="btn">&ensp;加&#8202;入&#8202;我&#8202;们&ensp;</a>
+                        <a href="#services" class="btn btn-outline">&ensp;救&#8202;援&#8202;服&#8202;务&ensp;</a>
+                        <!--
                         <a href="#contact" class="btn">加入我们</a>
                         <a href="#services" class="btn btn-outline">救援服务</a>
+                        -->
                     </div>
                 </div>
                 <div style="position: relative; width: 600px; height: 600px; margin: 0 auto; transform: translateX(30px);">
@@ -1787,7 +1803,7 @@
                 </div>
 
                 <div class="member-card">
-                    <div class="member-img" style="background: url('https://free.picui.cn/ffree/2025/07/20/687caafa05a84.jpg') center/cover no-repeat;"></div>
+                    <div class="member-img" style="background: url('https://free.picui.cn/free/2025/07/20/687caafa05a84.jpg') center/cover no-repeat;"></div>
                     <div class="member-info">
                         <h4>「安全教育」</h4> <h3>防溺水安全教育</h3>
                         <span class="member-role">伏山镇中心小学</span>
@@ -2033,7 +2049,7 @@
                     <i class="fas fa-search service-icon"></i>
                     <h3>&ensp;飞鹰寻人</h3>
                     <p>专业寻人团队，配备无人机等设备，协助寻找走失老人、儿童等特殊人群，累计帮助寻人寻亲30余人。</p>
-                                        <a href="https://www.kuaishou.com/short-video/3xpx5wa7z3gri86" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 10px 110px; font-size: 1rem;">了解更多</a>
+                    <a href="https://www.kuaishou.com/short-video/3xpx5wa7z3gri86" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 10px 110px; font-size: 1rem;">了解更多</a>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-fire-extinguisher service-icon"></i>
