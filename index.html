@@ -132,12 +132,12 @@
             color: var(--text);
             text-decoration: none;
             font-size: 1.1rem;
-            font-weight: 5;
+            font-weight: 500;
             padding: 8px 15px;
             border-radius: 4px;
             transition: all 0.3s ease;
             position: relative;
-        }
+        }   
         
         .desktop-view .nav-links a::after {
             content: '';
@@ -1592,7 +1592,6 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <i class="fas fa-eagle logo-icon"></i>
                     <div class="logo-text">宁阳飞鹰义警</div>
                 </div>
                 <div class="nav-links">
@@ -1608,16 +1607,17 @@
         <section class="hero" id="home">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>宁阳 <span> 飞鹰义警 </span> 救援队</h1>
+                    <h1>宁阳<span>&#8202;飞鹰义警&#8202;</span>救援队</h1>
                     <h2> 24/7 紧急电话： 0538-6817110</h2>
-                    <h3>  &nbsp; </h3>
+                    <h3>&nbsp;</h3>
                     <p>“义”&#8202;心为民&#12288;“救”&#8202;在身边&#12288;&ensp;“义”&#8202;心为民&#12288;“警”&#8202;心向党</p>
-                    <div class="hero-buttons">&#8202;
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn">加入我们</a>
+                        <a> </a>
+                        <a href="#services" class="btn btn-outline">救援服务</a>
+                        <!--
                         <a href="#contact" class="btn">&ensp;加&#8202;入&#8202;我&#8202;们&ensp;</a>
                         <a href="#services" class="btn btn-outline">&ensp;救&#8202;援&#8202;服&#8202;务&ensp;</a>
-                        <!--
-                        <a href="#contact" class="btn">加入我们</a>
-                        <a href="#services" class="btn btn-outline">救援服务</a>
                         -->
                     </div>
                 </div>
@@ -1650,7 +1650,7 @@
         <!-- 关于我们 -->
         <section class="section" id="about">
             <div class="section-title">
-                <h2>关&#8202;于&#8202;我&#8202;们</h2>
+                <h2>关于我们</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -1686,7 +1686,7 @@
         <!-- 服务部分 -->
         <section class="section services" id="services">
             <div class="section-title">
-                <h2>救&#8202;援&#8202;服&#8202;务</h2>
+                <h2>救援服务</h2>
             </div>
             <div class="services-container">
                 <div class="service-card">
@@ -1731,7 +1731,7 @@
         <!-- 公众号部分 -->
         <section class="section" id="team">
             <div class="section-title">
-                <h2>飞鹰微信公众号</h2>
+                <h2>微信公众号</h2>
             </div>
             <div class="team-container">
                 <div class="member-card">
@@ -1919,14 +1919,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="copyright">&#8202;
+                <div class="fa fa-copyright">&#12288;2&#8202;0&#8202;&#8202;1&#8202;9&#8202;&#8202;-&#8202;&#8202;2&#8202;0&#8202;2&#8202;5&ensp;宁阳县飞鹰义警公益服务中心</div>
+                <!--
+                <div class="fa fa-copyright">&#12288;2019-2025&ensp;宁阳县飞鹰义警公益服务中心</div>
                 <div class="fa fa-copyright">&#12288; |&#12288;2&#8202;0&#8202;2&#8202;5 飞&#8202;鹰&#8202;救&#8202;援&#12288;|&#12288;飞&#8202;鹰&#8202;义&#8202;警&#12288;|&#12288;山东宁阳飞鹰救援队 </div>
+                -->
             </div>
         </footer>
     </div>
     
 
-
+    <!--电脑-->
+    <!------------------------------------------------------------>
+    <!--手机-->
 
     <!-- 手机端内容 -->
     <div class="mobile-view">
@@ -1934,7 +1940,6 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <i class="fas fa-eagle logo-icon"></i>
                     <div class="logo-text">宁阳飞鹰义警</div>
                 </div>
                 <button class="menu-toggle">
@@ -1946,12 +1951,14 @@
         </nav>
         
         <!-- 移动端菜单 -->
+        <!--
         <div class="mobile-nav">
             <a href="#about">关于我们</a>
             <a href="#services">救援服务</a>
             <a href="#team">微信公众号</a>
             <a href="#contact">加入我们</a>
         </div>
+        -->
         
         <!-- 主界面区域 -->
         <section class="hero" id="home">
@@ -1964,13 +1971,14 @@
                 </div>
                 <div class="hero-img" style="position: relative; width: 100%; max-width: 300px; height: 300px; margin: 0 auto;">
                     <!-- 模糊 背景 -->
-                    <div class="hero-illustration" style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        background: radial-gradient(circle at center, rgba(230, 57, 70, 0.6), transparent 70%);
-                        border-radius: 50%;
-                        filter: blur(15px);
+                    <div class="hero-illustration" 
+                        style="
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background: radial-gradient(circle at center, rgba(230, 57, 70, 0.6), transparent 70%);
+                            border-radius: 50%;
+                            filter: blur(15px);
                     ">
                     </div>
                     
@@ -2264,10 +2272,14 @@
                 </div>
             </div>
             <div class="copyright">
-                <div class="fa fa-copyright">&#12288; |&#12288;2&#8202;0&#8202;2&#8202;5 飞&#8202;鹰&#8202;救&#8202;援&#12288;|&#12288;飞&#8202;鹰&#8202;义&#8202;警&#12288;|&#12288;山东宁阳飞鹰救援队 </div>
+                <div class="fa fa-copyright">&#12288;2&#8202;0&#8202;&#8202;1&#8202;9&#8202;&#8202;-&#8202;&#8202;2&#8202;0&#8202;2&#8202;5&ensp;宁阳县飞鹰义警公益服务中心</div>
+                <!--
+                <div class="fa fa-copyright"> &#12288;2&#8202;0&#8202;2&#8202;5 飞&#8202;鹰&#8202;救&#8202;援&#12288;|&#12288;飞&#8202;鹰&#8202;义&#8202;警&#12288;|&#12288;山东宁阳飞鹰救援队 </div>
+                -->
             </div>
         </footer>
     </div>
+
 
     <script>
         // 2.5Patch 修复顶栏
@@ -2283,13 +2295,13 @@
                     });
                 }
                 
-                // 关闭移动端菜单
-                const mobileNav = document.querySelector('.mobile-nav');
-                const menuToggle = document.querySelector('.menu-toggle');
-                if (mobileNav && menuToggle) {
-                    mobileNav.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                }
+                // // 关闭移动端菜单
+                // const mobileNav = document.querySelector('.mobile-nav');
+                // const menuToggle = document.querySelector('.menu-toggle');
+                // if (mobileNav && menuToggle) {
+                //     mobileNav.classList.remove('active');
+                //     menuToggle.classList.remove('active');
+                // }
             });
         });
         
@@ -2356,7 +2368,7 @@
             }, 5000);
         }
         
-        // 移动端菜单切换
+        // 移动端菜单切换 2.7.0 Pre1
         const menuToggle = document.querySelector('.menu-toggle');
         const mobileNav = document.querySelector('.mobile-nav');
         
@@ -2366,6 +2378,58 @@
                 mobileNav.classList.toggle('active');
             });
         }
+
+        // 修复移动端侧边栏跳转问题  2.7.1 Global Pre2
+        document.querySelectorAll('.mobile-nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    // 计算偏移量，考虑移动端导航栏高度
+                    const offset = 60; // 可以根据需要调整这个值
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动端菜单
+                    const mobileNav = document.querySelector('.mobile-nav');
+                    const menuToggle = document.querySelector('.menu-toggle');
+                    if (mobileNav && menuToggle) {
+                        mobileNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // 原有的滚动动画和导航栏效果保持不变
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                // 关闭移动端菜单
+                const mobileNav = document.querySelector('.mobile-nav');
+                const menuToggle = document.querySelector('.menu-toggle');
+                if (mobileNav && menuToggle) {
+                    mobileNav.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+        
     </script>
 </body>
 </html>
